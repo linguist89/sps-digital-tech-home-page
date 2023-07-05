@@ -9,7 +9,7 @@ function Header() {
       <div className="logo">
         <img src={HeaderImage} alt="Logo" />
       </div>
-      <Button>Login</Button>
+      <Button className="border-white hover:border-white hover:bg-landing-page bg-transparent">Login</Button>
     </header>
   );
 };

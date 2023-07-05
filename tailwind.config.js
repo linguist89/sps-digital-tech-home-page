@@ -4,7 +4,21 @@ module.exports = {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'landing-page': '#291A3E',
+        'landing-page-darker': '#35254A',
+      },
+    },
   },
-  plugins: [require('flowbite/plugin')],
+  variants: {
+    extend: {
+      borderColor: ['responsive', 'hover', 'focus', 'active'],
+      backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+      textColor: ['responsive', 'hover', 'focus', 'active'],
+    },
+  },
+  plugins: [
+    require('flowbite/plugin'),
+  ],
 };

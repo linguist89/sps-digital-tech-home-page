@@ -1,0 +1,33 @@
+.footer {
+    background-color: #35254A;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; /* or use 'space-between' based on your preference */
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    flex-grow: 1; /* this makes each anchor tag occupy equal space */
+    text-align: center; /* center the text in the space occupied by each anchor tag */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .footer a {
+    margin: 5px 0; /* add some margin to space out the anchor tags on smaller screens */
+  }
+}

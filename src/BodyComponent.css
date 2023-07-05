@@ -1,0 +1,94 @@
+.title{
+  font-size: 84px;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+.subtitle{
+  font-size: 40px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+.body-component {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #291A3E;
+  color: #fff;
+  height: 90vh;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .body-component {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 25px;
+  }
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+}
+
+@media (max-width: 768px) {
+  .left-section {
+    width: 320px;
+    padding-top: 10vh;
+  }
+}
+
+.right-section {
+  background-size: cover;
+  background-position: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.custom-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.custom-image {
+  width: 30vw; 
+  height: 60vh;
+}
+
+@media (max-width: 768px) {
+  .custom-image {
+    width: 60vw;
+    height: 30vh;
+  }
+}
