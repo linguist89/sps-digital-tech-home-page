@@ -1,12 +1,10 @@
 import './App.css';
-import { Button } from 'flowbite-react';
+import Header from './Header';
 
 function App() {
   return (
     <div className="App">
-      <Button onClick={() => {
-        alert("Let's goooo");
-      }}>Click me!</Button>
+      <Header></Header>
     </div>
   );
 }
