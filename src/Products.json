@@ -1,0 +1,32 @@
+[
+    {
+        "imgAlt": "Business Ideas Generator",
+        "imgSrc": "./static/images/landing_page_image.png",
+        "title": "Business Ideas Generator",
+        "description": "A website that generates business ideas based on the person's interests, their skills and the market they want to work in."
+    },
+    {
+        "imgAlt": "YouTube Insights",
+        "imgSrc": "https://example.com/product2.jpg",
+        "title": "YouTube Insights",
+        "description": "A Chrome extension that extracts insights from YouTube videos for anyone that is doing market research or wants to get the points from a video quicker."
+    },
+    {
+        "imgAlt": "Pseudocode validator",
+        "imgSrc": "https://example.com/product3.jpg",
+        "title": "Pseudocode validator",
+        "description": "A website that was designed to build pseudocode visually (drag and drop style) before starting to code."
+    },
+    {
+        "imgAlt": "Anvil Templates",
+        "imgSrc": "https://example.com/product4.jpg",
+        "title": "Anvil Templates",
+        "description": "A website designed fully in Anvil that provides premade templates for the Anvil platform."
+    },
+    {
+        "imgAlt": "Language Clips",
+        "imgSrc": "https://example.com/product5.jpg",
+        "title": "Language Clips",
+        "description": "A website designed to help people learn languages through native speakers posting audio clips and learners requesting audio clips."
+    }
+]
