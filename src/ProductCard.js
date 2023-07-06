@@ -1,4 +1,4 @@
-import { Card } from 'flowbite-react';
+import { Card, Button } from 'flowbite-react';
 
 function ProductCard({ imgAlt, imgSrc, title, description}) {
   return (
@@ -16,6 +16,7 @@ function ProductCard({ imgAlt, imgSrc, title, description}) {
           {description}
         </p>
       </p>
+    <Button>Visit Site</Button>
     </Card>
   )
 }

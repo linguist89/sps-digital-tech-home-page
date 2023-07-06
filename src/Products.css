@@ -14,7 +14,7 @@
 
 @media (min-width: 900px) {
     .products-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         padding: 3rem;
     }
 }
