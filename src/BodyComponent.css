@@ -66,14 +66,6 @@
   }
 }
 
-.custom-button {
-  background-color: #fff;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-}
-
 .custom-image {
   width: 100%;
   aspect-ratio: 600 / 525;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
-import { Button } from 'flowbite-react';
 import HeaderImage from './static/images/site_logo.png';
+import './Buttons.css';
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
       <div className="logo">
         <img src={HeaderImage} alt="Logo" />
       </div>
-      <Button className="border-white hover:border-white hover:bg-landing-page bg-transparent">Login</Button>
+      <button className="transparent-button">Login</button>
     </header>
   );
 };

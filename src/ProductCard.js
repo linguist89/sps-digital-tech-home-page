@@ -1,4 +1,5 @@
-import { Card, Button } from 'flowbite-react';
+import { Card } from 'flowbite-react';
+import './Buttons.css';
 
 function ProductCard({ imgAlt, imgSrc, title, description}) {
   return (
@@ -7,16 +8,12 @@ function ProductCard({ imgAlt, imgSrc, title, description}) {
       imgSrc={imgSrc}
     >
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        <p>
           {title}
-        </p>
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
-        <p>
           {description}
-        </p>
       </p>
-    <Button>Visit Site</Button>
+    <button className="solid-card-button">Visit Site</button>
     </Card>
   )
 }

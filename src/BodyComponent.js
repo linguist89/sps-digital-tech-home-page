@@ -1,7 +1,7 @@
 import React from 'react';
 import './BodyComponent.css';
 import LandingImage from './static/images/landing_page_image.png';
-import { Button } from 'flowbite-react';
+import './Buttons.css';
 
 function BodyComponent(){
   return (
@@ -10,8 +10,8 @@ function BodyComponent(){
         <h1 className="title">SPS Digital Tech</h1>
         <h2 className="subtitle">Building tools you need, so you can focus on what you want.</h2>
         <div className="button-group">
-          <Button className="bg-white text-landing-page">Products</Button>
-          <Button className="border-white hover:border-white hover:bg-landing-page bg-transparent">Contact</Button>
+          <button className="solid-button">Products</button>
+          <button className="transparent-button">Contact</button>
         </div>
       </div>
       <div className="right-section">
