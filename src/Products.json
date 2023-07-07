@@ -3,30 +3,35 @@
         "imgAlt": "Business Ideas Generator",
         "imgSrc": "product 1",
         "title": "Business Ideas Generator",
-        "description": "A website that generates business ideas based on the person's interests, their skills and the market they want to work in."
+        "description": "A website that generates business ideas based on the person's interests, their skills and the market they want to work in.",
+        "href": "https://business-ideas.anvil.app/"
     },
     {
         "imgAlt": "YouTube Insights",
         "imgSrc": "product 2",
         "title": "YouTube Insights",
-        "description": "A Chrome extension that extracts insights from YouTube videos for anyone doing market research or wants to get the points from a video."
+        "description": "A Chrome extension that extracts insights from YouTube videos for anyone doing market research or wants to get the points from a video.",
+        "href": "https://chrome.google.com/webstore/category/extensions"
     },
     {
         "imgAlt": "Pseudocode validator",
         "imgSrc": "product 3",
         "title": "Pseudocode validator",
-        "description": "A website that was designed to build pseudocode visually (drag and drop style) before starting to code."
+        "description": "A website that was designed to build pseudocode visually (drag and drop style) before starting to code.",
+        "href": "https://pseudocode-validator.anvil.app/"
     },
     {
         "imgAlt": "Anvil Templates",
         "imgSrc": "product 4",
         "title": "Anvil Templates",
-        "description": "A website designed fully in Anvil that provides premade templates for the Anvil platform."
+        "description": "A website designed fully in Anvil that provides premade templates for the Anvil platform.",
+        "href": "https://templates.spsdigitaltech.com/"
     },
     {
         "imgAlt": "Language Clips",
         "imgSrc": "product 5",
         "title": "Language Clips",
-        "description": "A website designed to help people learn languages through native speakers posting audio clips and learners requesting audio clips."
+        "description": "A website designed to help people learn languages through native speakers posting audio clips and learners requesting audio clips.",
+        "href": "https://languageclips.com/"
     }
 ]

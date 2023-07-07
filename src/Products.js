@@ -26,6 +26,7 @@ function Products(){
                   imgSrc={images[product.imgSrc]}
                   title={product.title}
                   description={product.description}
+                  href={product.href}
                 />
             )}
         </div>

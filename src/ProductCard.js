@@ -1,7 +1,7 @@
 import { Card } from 'flowbite-react';
 import './Buttons.css';
 
-function ProductCard({ imgAlt, imgSrc, title, description}) {
+function ProductCard({ imgAlt, imgSrc, title, description, href}) {
   return (
     <Card
       imgAlt={imgAlt}
@@ -13,7 +13,7 @@ function ProductCard({ imgAlt, imgSrc, title, description}) {
       <p className="font-normal text-gray-700 dark:text-gray-400">
           {description}
       </p>
-    <button className="solid-card-button">Visit Site</button>
+    <a className="solid-card-button" href={href} target="_blank">Visit Site</a>
     </Card>
   )
 }
