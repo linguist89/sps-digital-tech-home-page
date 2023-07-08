@@ -18,6 +18,8 @@ function Products(){
     }
 
     return(
+        <>
+        <h1 className="products-heading">Products</h1>
         <div className="products-container">
             {productData.map((product, index) => 
                 <ProductCard
@@ -30,6 +32,7 @@ function Products(){
                 />
             )}
         </div>
+        </>
     );
 }
 
