@@ -25,7 +25,7 @@
   .footer {
     flex-direction: column;
     padding: 5px;
-    font-size: 12px;
+    font-size: 0.8rem;
   }
   .footer a {
     margin: 5px 0; /* add some margin to space out the anchor tags on smaller screens */
