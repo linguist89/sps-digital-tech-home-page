@@ -36,7 +36,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 20rem;
+  max-width: 34rem;
+}
+
+@media (max-width: 768px) {
+  .left-section {
+    max-width: 20rem;
+  }
 }
 
 .right-section {
