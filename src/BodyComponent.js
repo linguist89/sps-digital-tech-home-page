@@ -19,7 +19,7 @@ function BodyComponent(){
     <div className="body-component">
       <div className="left-section">
         <h1 className="title">SPS Digital Tech</h1>
-        <h2 className="subtitle">Building tools you need, so you can focus on what you want.</h2>
+        <h2 className="subtitle">Building the tools you need, so you can focus on what you want.</h2>
         <div className="button-group">
           <button className="solid-button" onClick={scrollToProducts}>Products</button>
           <ContactDialog className="transparent-button"></ContactDialog>

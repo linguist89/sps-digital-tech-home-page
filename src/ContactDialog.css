@@ -32,13 +32,13 @@
   margin: 0;
   font-weight: 500;
   color: #291A3E; /* changed color to match #291A3E */
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .DialogDescription {
   margin: 10px 0 20px;
   color: #291A3E; /* changed color to match #291A3E */
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
