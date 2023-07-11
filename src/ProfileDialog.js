@@ -3,6 +3,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { Cross2Icon } from '@radix-ui/react-icons';
 import './Buttons.css';
 import Profile from './Profile'
+import LogoutButton from './LogoutButton';
 
 function ProfileDialog() {
     return (
@@ -15,6 +16,7 @@ function ProfileDialog() {
           <Dialog.Content className="DialogContent">
             <Dialog.Title className="DialogTitle">Profile</Dialog.Title>
             <Profile></Profile>
+            <LogoutButton></LogoutButton>
             <Dialog.Close asChild>
               <button className="IconButton" aria-label="Close">
                 <Cross2Icon />
