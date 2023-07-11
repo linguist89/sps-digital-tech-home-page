@@ -1,0 +1,6 @@
+.social-logins{
+    display: grid;
+    grid-template-columns: 12fr;
+    justify-items: center;
+    align-items: center;
+}

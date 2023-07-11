@@ -1,8 +1,9 @@
 import React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { Cross2Icon } from '@radix-ui/react-icons';
-import './ContactDialog.css';
+import './LoginDialog.css';
 import './Buttons.css';
+import GoogleAuthentication from './GoogleAuthentication';
 
 function LoginDialog() {
     return (
@@ -13,14 +14,9 @@ function LoginDialog() {
     <Dialog.Portal>
       <Dialog.Overlay className="DialogOverlay" />
       <Dialog.Content className="DialogContent" style={{height: '95vh'}}>
-        <iframe 
-            title="Login Form"
-            width="100%" 
-            height="100%" 
-            src="https://youtube-insights.anvil.app/" 
-        ></iframe>
-        <div style={{ display: 'flex', marginTop: 25, justifyContent: 'flex-end' }}>
-        </div>
+        <div className="social-logins">
+          <GoogleAuthentication></GoogleAuthentication>
+        </div>        
         <Dialog.Close asChild>
           <button className="IconButton" aria-label="Close">
             <Cross2Icon />
