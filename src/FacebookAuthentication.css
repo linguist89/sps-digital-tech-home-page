@@ -1,15 +1,11 @@
-.welcome-div{
-    color: #ffffff;
-}
-
-.google-button {
+.facebook-button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
   }
   
-.google-logo {
+.facebook-logo {
 width: 36px;
 height: 36px;
 }

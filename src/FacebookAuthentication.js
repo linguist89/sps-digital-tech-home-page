@@ -1,12 +1,12 @@
 import './Buttons.css';
-import './GoogleAuthentication.css';
+import './FacebookAuthentication.css';
 import React, { useEffect, useContext } from "react";
-import { auth, googleProvider } from "./Firebase.js";
+import { auth, facebookProvider } from "./Firebase.js";
 import { getRedirectResult, signInWithPopup } from "firebase/auth";
 import { UserContext } from './App';
-import GoogleLogo from './static/images/g-logo_transparent.png';
+import FacebookLogo from './static/images/f_logo_RGB-Blue_114.png';
 
-function GoogleAuthentication() {
+function FacebookAuthentication() {
   const { user, setUser } = useContext(UserContext);
 
   useEffect(() => {
@@ -25,13 +25,13 @@ function GoogleAuthentication() {
   return (
     <div>
       { !user &&
-        <button className="transparent-purple-button google-button" onClick={() => signInWithPopup(auth, googleProvider)}>
-          <img src={GoogleLogo} alt="Google Logo" className="google-logo" />
-          Sign in with Google
+        <button className="transparent-purple-button google-button" onClick={() => signInWithPopup(facebookProvider)}>
+          <img src={FacebookLogo} alt="Facebook Logo" className="facebook-logo" />
+          Sign in with Facebook
         </button>
       }
     </div>
   );
 };
 
-export default GoogleAuthentication;
+export default FacebookAuthentication;

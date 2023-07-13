@@ -26,7 +26,7 @@ function Header() {
       { 
         user ? 
         <>
-          <div className="welcome-div">Welcome, {user.displayName}</div>
+          <div className="welcome-div">Welcome, {user.displayName ? user.displayName : user.email}</div>
           <button className="transparent-button" onClick={() => signOut(auth)}>Logout</button>
         </> :
         <LoginDialog />
