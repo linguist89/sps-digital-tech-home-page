@@ -4,5 +4,17 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 2rem;
+    gap: 1rem;
 }
+
+.link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  

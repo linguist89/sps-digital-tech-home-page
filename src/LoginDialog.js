@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { Cross2Icon } from '@radix-ui/react-icons';
 import './LoginDialog.css';
@@ -7,8 +7,11 @@ import GoogleAuthentication from './GoogleAuthentication';
 import LoginWithEmailLink from './PasswordlessLogin';
 import PasswordSignupAuthentication from './PasswordSignupAuthentication';
 import PasswordLoginAuthentication from './PasswordLoginAuthentication';
+import OrLine from './OrLine';
 
 function LoginDialog() {
+    const [showSignup, setShowSignup] = useState(false);
+
     return (
   <Dialog.Root>
     <Dialog.Trigger asChild>
@@ -18,10 +21,18 @@ function LoginDialog() {
       <Dialog.Overlay className="DialogOverlay" />
       <Dialog.Content className="DialogContent" style={{height: '95vh'}}>
         <div className="social-logins">
+          <PasswordLoginAuthentication></PasswordLoginAuthentication>
+          <OrLine></OrLine>
           <GoogleAuthentication></GoogleAuthentication>
           <LoginWithEmailLink></LoginWithEmailLink>
-          <PasswordLoginAuthentication></PasswordLoginAuthentication>
-          <PasswordSignupAuthentication></PasswordSignupAuthentication>
+          {showSignup ?
+            <PasswordSignupAuthentication></PasswordSignupAuthentication> 
+            : 
+            <p>
+              Don't have an account? 
+              {' '}
+              <button className="link-button" onClick={() => setShowSignup(true)}>Signup here</button>
+            </p>}
         </div>        
         <Dialog.Close asChild>
           <button className="IconButton" aria-label="Close">

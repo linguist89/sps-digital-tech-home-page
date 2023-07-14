@@ -1,7 +1,9 @@
 // PasswordSignupAuthentication.js
 import React, { useState } from 'react';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./Firebase.js";
+import './PasswordSignupAuthentication.css'
+import './Buttons.css';
 
 function PasswordSignupAuthentication() {
   const [email, setEmail] = useState('');
@@ -21,7 +23,7 @@ function PasswordSignupAuthentication() {
   }
 
   return (
-    <div>
+    <div className="authentication-form">
       <input
         type="email"
         value={email}
@@ -34,7 +36,7 @@ function PasswordSignupAuthentication() {
         onChange={(event) => handleInputChange(event, setPassword)}
         placeholder="Password"
       />
-      <button onClick={handleSignup}>Signup</button>
+      <button className="transparent-button" onClick={handleSignup}>Signup</button>
       {error && <p>{error}</p>}
     </div>
   )
