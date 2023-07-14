@@ -20,7 +20,7 @@ function GoogleAuthentication() {
     }
     
     fetchRedirectResult();
-  }, []); 
+  }, [setUser]); 
 
   return (
     <div>

@@ -16,7 +16,7 @@ function Header() {
     });
 
     return () => unsubscribe();
-  }, []); 
+  }, [setUser]); 
 
   return (
     <header className="header">

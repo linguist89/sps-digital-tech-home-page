@@ -11,7 +11,7 @@ function LoginWithEmailLink() {
     const [showInput, setShowInput] = useState(false);
     const [email, setEmail] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
-    const { user, setUser } = useContext(UserContext);
+    const { setUser } = useContext(UserContext);
     const auth = getAuth();
   
     useEffect(() => {
@@ -33,7 +33,7 @@ function LoginWithEmailLink() {
         }
       }
       performSignIn();
-    }, []);
+    }, [auth, setUser]);
 
     const sendLink = () => {
       sendSignInLinkToEmail(auth, email, actionCodeSettings)
