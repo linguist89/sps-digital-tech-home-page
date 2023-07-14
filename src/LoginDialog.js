@@ -18,8 +18,9 @@ function LoginDialog() {
       <button className="transparent-button">Login</button>
     </Dialog.Trigger>
     <Dialog.Portal>
-      <Dialog.Overlay className="DialogOverlay" />
-      <Dialog.Content className="DialogContent" style={{height: '95vh'}}>
+      <Dialog.Overlay className="LoginDialogOverlay"/>
+      <Dialog.Content className="LoginDialogContent">
+        <h1 className="login-heading">Login</h1>
         <div className="social-logins">
           <PasswordLoginAuthentication></PasswordLoginAuthentication>
           <OrLine></OrLine>

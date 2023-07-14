@@ -11,10 +11,10 @@ function ContactDialog() {
           <button className="transparent-button">Contact</button>
         </Dialog.Trigger>
         <Dialog.Portal>
-          <Dialog.Overlay className="DialogOverlay" />
-          <Dialog.Content className="DialogContent">
-            <Dialog.Title className="DialogTitle">Get in contact</Dialog.Title>
-            <Dialog.Description className="DialogDescription">
+          <Dialog.Overlay className="ContactDialogOverlay" />
+          <Dialog.Content className="ContactDialogContent">
+            <Dialog.Title className="ContactDialogTitle">Get in contact</Dialog.Title>
+            <Dialog.Description className="ContactDialogDescription">
               Send a message by using the form below or send an email to contact@spsdigitaltech.com
             </Dialog.Description>
             <fieldset className="Fieldset">
