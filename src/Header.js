@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './Header.css';
 import HeaderImage from './static/images/site_logo.png';
 import './Buttons.css';
@@ -8,13 +8,13 @@ import { UserContext } from './App';
 import LoginDialog from './LoginDialog';
 
 function Header() {
-  const { user, setUser } = useContext(UserContext);
+  const { user, setUser } = React.useContext(UserContext);
 
   React.useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
     });
-
+   
     return () => unsubscribe();
   }, [setUser]); 
 

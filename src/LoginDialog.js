@@ -20,12 +20,13 @@ function LoginDialog() {
     <Dialog.Portal>
       <Dialog.Overlay className="LoginDialogOverlay"/>
       <Dialog.Content className="LoginDialogContent">
-        <h1 className="login-heading">Login</h1>
+        {!showSignup && <h1 className="login-heading">Login</h1>}
+        {showSignup && <h1 className="login-heading">Sign Up</h1>}
         <div className="social-logins">
-          <PasswordLoginAuthentication></PasswordLoginAuthentication>
+          {!showSignup && <><PasswordLoginAuthentication></PasswordLoginAuthentication>
           <OrLine></OrLine>
           <GoogleAuthentication></GoogleAuthentication>
-          <LoginWithEmailLink></LoginWithEmailLink>
+          <LoginWithEmailLink></LoginWithEmailLink></>}
           {showSignup ?
             <PasswordSignupAuthentication></PasswordSignupAuthentication> 
             : 
@@ -33,6 +34,12 @@ function LoginDialog() {
               Don't have an account? 
               {' '}
               <button className="link-button" onClick={() => setShowSignup(true)}>Signup here</button>
+            </p>}
+          {showSignup &&
+            <p>
+              Already have an account? 
+              {' '}
+              <button className="link-button" onClick={() => setShowSignup(false)}>Login instead</button>
             </p>}
         </div>        
         <Dialog.Close asChild>
