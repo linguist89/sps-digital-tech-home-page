@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getStorage, ref, list, getDownloadURL } from 'firebase/storage';
+import { ref, list, getDownloadURL } from 'firebase/storage';
 import { storage } from './Firebase.js';
 import { Card } from 'flowbite-react';
 
@@ -25,6 +25,7 @@ function FreeIcons() {
 
   useEffect(() => {
     loadImages();
+    // eslint-disable-next-line
   }, []);
 
   const handleDownload = (url, filename) => {
@@ -50,37 +51,37 @@ function FreeIcons() {
   };
 
   return (
-    <div style={{padding: '3rem'}}>
-        <Card>
+    <div style={{ padding: '3rem' }}>
+      <Card>
         <h1 className="products-heading">Free Icons</h1>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(20, 1fr)', gap: '1rem', padding: '5rem' }}> {/* 20 columns grid */}
-            {images.map((image, index) => (
+          {images.map((image, index) => (
             <div key={index} style={{ position: 'relative', transition: 'transform 0.3s', cursor: 'pointer' }}
-                onMouseOver={e => e.currentTarget.style.transform = 'scale(1.3)'}
-                onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
+              onMouseOver={e => e.currentTarget.style.transform = 'scale(1.3)'}
+              onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
             >
-                <img src={image.url} alt={image.title} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} /> {/* adjusted to be a percentage */}
-                <div style={{
+              <img src={image.url} alt={image.title} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} /> {/* adjusted to be a percentage */}
+              <div style={{
                 position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex',
                 alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.5)', color: '#fff',
                 transition: 'opacity 0.3s', opacity: 0, zIndex: 1, borderRadius: '50%'
-                }}
+              }}
                 onMouseOver={e => e.currentTarget.style.opacity = '1'}
                 onMouseOut={e => e.currentTarget.style.opacity = '0'}
-                >
-                <button style={{fontSize: '0.4rem'}} onClick={() => handleDownload(image.url, image.title)}>
-                    Download
+              >
+                <button style={{ fontSize: '0.4rem' }} onClick={() => handleDownload(image.url, image.title)}>
+                  Download
                 </button>
-                </div>
+              </div>
             </div>
-            ))}
-            {loadMore && (
+          ))}
+          {loadMore && (
             <button onClick={loadImages} style={{ gridColumn: 'span 4' }}> {/* span the button across 4 columns */}
-                Load More
+              Load More
             </button>
-            )}
+          )}
         </div>
-        </Card>
+      </Card>
     </div>
   );
 };
